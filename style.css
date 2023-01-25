@@ -1,0 +1,95 @@
+.center {
+  color: rgb(225, 225, 225);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 44px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  opacity: 0;
+  animation: fade-in 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  animation: fade-in 4s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.button {
+  padding: 10px 50px;
+  border-radius: 20px;
+  color: rgb(200, 200, 200);
+  text-decoration: none;
+  margin-top: 20px;
+  margin-right: 0px;
+  width: 250px;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+  font-weight: bolder;
+}
+
+.button:hover {
+  background-color: rgba(130, 130, 130, 0.200);
+}
+
+.button-linkedin {
+  background-color: rgb(0, 0, 80);
+}
+
+.button-blog {
+  background-color: rgb(0, 0, 130);
+}
+
+.button-handshake {
+  background-color: rgb(120, 0, 0);
+}
+
+.button-comptia {
+  background-color: rgb(70, 0, 0);
+}
+
+.button:hover {
+  background-color: rgba(130, 130, 130, 0.200);
+}
+  
+body {
+  margin: auto;
+  overflow: auto;
+  background: linear-gradient(360deg, rgb(17, 0, 102) 1%, rgb(5, 5, 5) 38%, rgb(56, 56, 56) 68%, rgb(71, 71, 71) 98%);
+  animation: gradient 60s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
